@@ -24,9 +24,26 @@
         <a href="/">
           <img src="assets/images/dragon.png">
         </a>
-        <a href="#">
+        <a href="#menu" class="menu-link">
           <i class="fas fa-bars fa-3x"></i>
         </a>
+      </nav>
+      <nav id="menu" class="panel" role="navigation">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="https://docs.google.com/document/d/1Zz7DPMV1Xztxhv5fNN5m0rTbP0EhjNppfhc3b074poI/edit?usp=sharing">Resume</a></li>
+          <li>
+            <a href="https://github.com/jonathanyiv">
+              <i class="fab fa-github-alt fa-1x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jonathanyiv/">
+              <i class="fab fa-linkedin fa-1x"></i>
+            </a>
+            <a href="mailto:jonathanyiv@gmail.com">
+              <i class="far fa-envelope fa-1x"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
       <main>
         <header>
@@ -50,7 +67,7 @@
           </p>
           <br>
           <p>
-            I learned about my love for coding earlier this year, when I left my position as a manager to pursue web development full-time.
+            I learned about my love for coding earlier last year, when I left my position as a manager to pursue web development full-time.
           </p>
           <br>
           <p>
@@ -179,5 +196,14 @@
       <br>
       <small>&copy; 2017 by Jonathan Yiv</small>
     </footer>
+
+    <!-- bigSlide.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/javascripts/bigSlide.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.menu-link').bigSlide();
+      });
+    </script>
   </body>
 </html>

@@ -41,19 +41,28 @@ small {
 }
 
 /* Navigation Bar */
-
 nav {
-  margin-top: 5em;
+  padding-top: 5em;
   display: flex;
   justify-content: space-between;
+}
+
+/* Navigation Menu */
+#menu {
+  background-color: #f3f3f3;
+  padding-left: 3em;
+  font-size: 3em;
 }
 
 nav img[src*="dragon"] { width: 25em; }
 
 /* Main Sections */
-
 main {
   margin-bottom: 100em;
+}
+
+main:last-child {
+  margin-bottom: 10em;
 }
 
 /* Header */
@@ -80,7 +89,6 @@ section#technology * {
 }
 
 /* Overview Section */
-
 section#overview {
   display: flex;
   width: 50%;
@@ -99,7 +107,6 @@ section#overview {
 }
 
 /* Portfolio Section */
-
 section#portfolio {
   display: flex;
   width: 100%;
@@ -172,6 +179,12 @@ footer {
 
   nav img[src*="dragon"] { width: 13em; }
 
+  /* Navigation Menu */
+  #menu {
+    padding-left: 1.25em;
+    font-size: 2em;
+  }
+
   /* Header */
   header { margin-top: 2em; }
 
@@ -195,6 +208,8 @@ footer {
 
   nav img[src*="dragon"] { width: 8em; }
 
+  nav { padding-top: 3em; }
+
   /* Header */
   h1 { font-size: 4em; }
 
@@ -208,6 +223,8 @@ footer {
 
   /* Portfolio Section */
   div.images img { height: 25em; }
+
+  #portfolio .github { font-size: 1.4em; }
 }
 
 /* Mobile Viewports */
@@ -216,6 +233,12 @@ footer {
   .container { width: 70%; }
 
   nav img[src*="dragon"] { width: 6em; }
+
+  /* Navigation Menu */
+  #menu {
+    padding-left: 1em;
+    font-size: 1em;
+  }
 
   /* Header */
   header { margin-top: 1em; }
@@ -242,6 +265,8 @@ footer {
 
   /* Portfolio Section */
   div.images img { height: 15em; }
+
+  #portfolio .github { font-size: 1.2em; }
 }
 
 @media screen and (max-width: 375px) {
@@ -249,6 +274,8 @@ footer {
   h1 { font-size: 2.5em; }
 
   header p { font-size: 1.2em; }
+
+  nav { padding-top: 2em; }
 
   /* Portfolio Section */
   div.images img { height: 12em; }
@@ -269,4 +296,7 @@ footer {
   section#technology { margin-top: 2em; }
 
   section#technology * { height: 3em; }
+
+  /* Portfolio Section */
+  #portfolio .github { font-size: 1.1em; }
 }
