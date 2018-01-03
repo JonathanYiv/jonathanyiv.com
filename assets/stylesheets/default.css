@@ -14,6 +14,11 @@ h1 {
   font-size: 10em;
 }
 
+p {
+  text-align: center;
+  font-size: 4em;
+}
+
 /* Navigation Bar */
 
 nav {
@@ -24,6 +29,10 @@ nav {
 
 nav img[src*="dragon"] { width: 25em; }
 
+/* Main Sections */
+
+main { height: 100em; }
+
 /* Header */
 
 header {
@@ -31,10 +40,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-header p {
-  font-size: 4em;
 }
 
 /* Technology Section */
@@ -51,9 +56,71 @@ section#technology * {
   height: 15em;
 }
 
+/* Overview Section */
+
+section#overview {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+#overview p {
+  font-size: 2.5em;
+}
+
+#overview a {
+  font-size: 2em;
+  color: grey;
+}
+
+/* Portfolio Section */
+
+section#portfolio {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 5em;
+  width: 80%;
+}
+
+div.images figure {
+  margin-bottom: 4em;
+}
+
+div.images img {
+  height: 25em;
+}
+
+#portfolio a {
+  color: grey;
+}
+
+#portfolio figcaption {
+  font-size: 1.1em;
+}
+
+#portfolio .github {
+  font-size: 1.8em;
+}
+
 /* Laptop Viewports */
 @media screen and (max-width: 1440px) {
-  /* Navigatioon Bar */
+  /* Main Sections */
+
+  main { height: 75em; }
+
+  /* Navigation Bar */
   body { width: 85%; }
 
   nav img[src*="dragon"] { width: 15em; }
@@ -62,8 +129,19 @@ section#technology * {
   h1 { font-size: 5em; }
 
   header p { font-size: 2em; }
+
+  /* Overview Section */
+  section#overview { width: 65%; }
+
+  /* Portfolio Section */
+  div.images { width: 100%; }
 }
+
 @media screen and (max-width: 1024px) {
+  /* Main Sections */
+
+  main { height: 60em; }
+
   /* Navigation Bar */
   body { width: 80%; }
 
@@ -72,10 +150,21 @@ section#technology * {
   /* Technology Section */
   section#technology { margin-top: 6em; }
   section#technology * { height: 12em; }
+
+  /* Overview Section */
+  section#overview { width: 75%; }
+
+  /* Portfolio Section */
+  div.images img { height: 30em; }
+
+  div.images { width: 100%; }
 }
 
 /* Tablet Viewports */
 @media screen and (max-width: 768px) {
+  /* Main Sections */
+  main { height: 65em; }
+
   /* Navigation Bar */
   body { width: 75%; }
 
@@ -90,10 +179,20 @@ section#technology * {
 
   /* Technology Section */
   section#technology * { height: 10em; }
+
+  /* Overview Section */
+  section#overview { width: 85%; }
+
+  /* Portfolio Section */
+  div.images img { height: 25em; }
 }
 
 /* Mobile Viewports */
 @media screen and (max-width: 425px) {
+  /* Main Sections */
+
+  main { height: 40em; }
+
   /* Navigation Bar */
   body { width: 70%; }
 
@@ -110,9 +209,27 @@ section#technology * {
   section#technology { margin-top: 4em; }
 
   section#technology * { height: 5em; }
+
+  /* Overview Section */
+  section#overview { width: 100%; }
+
+  #overview p {
+    font-size: 1.2em;
+  }
+
+  #overview a {
+    font-size: 1em;
+  }
+
+  /* Portfolio Section */
+  div.images img { height: 15em; }
 }
 
 @media screen and (max-width: 375px) {
+  /* Main Sections */
+
+  main { height: 35em; }
+
   /* Header */
   h1 { font-size: 2.5em; }
 
@@ -120,6 +237,10 @@ section#technology * {
 }
 
 @media screen and (max-width: 320px) {
+  /* Main Sections */
+
+  main { height: 25em; }
+
   /* Navigation */
   body { width: 85%; }
 
