@@ -106,7 +106,7 @@ nav img[src*="dragon"] {
 
 /* Main Sections */
 main {
-  margin-bottom: 100vh;
+  margin-bottom: 50vh;
 }
 
 main:last-child {
@@ -237,15 +237,16 @@ footer {
     font-size: 2em;
   }
 
-  /* Header */
-  header { margin-top: 15em; }
-
   /* Technology Section */
   section#technology { margin-top: 6em; }
   section#technology * { height: 12em; }
 
   /* Overview Section */
   section#overview { width: 75%; }
+
+  #overview p {
+    font-size: 1.6em;
+  }
 
   /* Portfolio Section */
   div.images img { height: 30em; }
@@ -266,8 +267,6 @@ footer {
   h1 { font-size: 4em; }
 
   header p { font-size: 1.5em; }
-
-  header { margin-top: 10em; }
 
   /* Technology Section */
   section#technology * { height: 10em; }
