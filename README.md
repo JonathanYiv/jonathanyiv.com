@@ -2,7 +2,7 @@
 
 This is the source code for my personal resume/portfolio website.
 
-Screenshot here...
+![Screenshot of Site](assets/images/screenshot.png)
 
 My [first website](https://github.com/JonathanYiv/jonathanyiv.github.io) used Jekyll, GitHub Pages, and a pre-built theme called 'Minimal Mistakes.'
 
@@ -13,4 +13,4 @@ It will be hosted on Heroku and have HTTPS for a secure connection as opposed to
 I also realized that I am not a blogger by any means; it's simply not in my nature.
 Leaving up that section of my website would make it seem 'unkempt,' so.. no more blog.
 
-I will be using CSS Grid and Flexbox.
+I will be using Flexbox.

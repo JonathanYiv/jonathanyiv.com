@@ -1,3 +1,45 @@
+/* About Accordion */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  line-height: 3;
+  cursor: pointer;
+  font-size: 2em;
+  color: grey;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height .35s;
+       -o-transition: max-height .35s;
+          transition: max-height .35s;
+}
+
+.tab-content p {
+  margin: 1em;
+}
+
+input:checked ~ .tab-content {
+  max-height: 150em;
+}
+
+/* General Utility */
+
 * {
   box-sizing: border-box;
 }
@@ -42,7 +84,10 @@ small {
 
 /* Navigation Bar */
 nav {
+  position: fixed;
   padding-top: 5em;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -68,7 +113,7 @@ main:last-child {
 /* Header */
 
 header {
-  margin-top: 5em;
+  margin-top: 20em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,6 +202,8 @@ footer {
 /* Laptop Viewports */
 @media screen and (max-width: 1440px) {
   /* Navigation Bar */
+  nav { width: 85%; }
+
   .container { width: 85%; }
 
   nav img[src*="dragon"] { width: 15em; }
@@ -175,6 +222,8 @@ footer {
 
 @media screen and (max-width: 1024px) {
   /* Navigation Bar */
+  nav { width: 80%; }
+
   .container { width: 80%; }
 
   nav img[src*="dragon"] { width: 13em; }
@@ -186,7 +235,7 @@ footer {
   }
 
   /* Header */
-  header { margin-top: 2em; }
+  header { margin-top: 15em; }
 
   /* Technology Section */
   section#technology { margin-top: 6em; }
@@ -214,6 +263,8 @@ footer {
   h1 { font-size: 4em; }
 
   header p { font-size: 1.5em; }
+
+  header { margin-top: 10em; }
 
   /* Technology Section */
   section#technology * { height: 10em; }
