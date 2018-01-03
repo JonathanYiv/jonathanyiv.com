@@ -3,16 +3,21 @@
 }
 
 html, body {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Maven Pro', sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  font-family: 'Maven Pro', sans-serif;
-  background-color: #fafafa;
 }
 
 a {
@@ -27,6 +32,11 @@ h1 {
 p {
   text-align: center;
   font-size: 4em;
+}
+
+small {
+  font-size: .9em;
+  color: grey;
 }
 
 /* Navigation Bar */
@@ -129,12 +139,12 @@ div.images img {
 
 /* Footer */
 footer { /* This shit isn't working */
-  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 20em;
-  text-align: center;
-  margin-left: -5.55%;
-  margin-right: -5.55%;
-  background-color: orange;
+  background-color: #f3f3f3;
 }
 
 /* Laptop Viewports */
