@@ -35,7 +35,7 @@ label {
 }
 
 input:checked ~ .tab-content {
-  max-height: 150em;
+  max-height: 200em;
 }
 
 /* General Utility */
