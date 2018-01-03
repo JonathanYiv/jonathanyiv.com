@@ -1,4 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   margin: 0 auto;
   font-family: 'Maven Pro', sans-serif;
@@ -31,12 +41,15 @@ nav img[src*="dragon"] { width: 25em; }
 
 /* Main Sections */
 
-main { height: 100em; }
+main {
+  margin-bottom: 100em;
+  flex: 1 0 auto;
+}
 
 /* Header */
 
 header {
-  margin-top: 5em;
+  margin-top: 15em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,6 +127,16 @@ div.images img {
   font-size: 1.8em;
 }
 
+/* Footer */
+footer { /* This shit isn't working */
+  width: auto;
+  height: 20em;
+  text-align: center;
+  margin-left: -5.55%;
+  margin-right: -5.55%;
+  background-color: orange;
+}
+
 /* Laptop Viewports */
 @media screen and (max-width: 1440px) {
   /* Main Sections */
@@ -171,7 +194,7 @@ div.images img {
   nav img[src*="dragon"] { width: 8em; }
 
   /* Header */
-  header { margin-top: 3em; }
+  header { margin-top: 7em; }
 
   h1 { font-size: 4em; }
 
@@ -199,7 +222,7 @@ div.images img {
   nav img[src*="dragon"] { width: 6em; }
 
   /* Header */
-  header { margin-top: 2em; }
+  header { margin-top: 5em; }
 
   h1 { font-size: 3em; }
 
@@ -234,6 +257,9 @@ div.images img {
   h1 { font-size: 2.5em; }
 
   header p { font-size: 1.2em; }
+
+  /* Portfolio Section */
+  div.images img { height: 12em; }
 }
 
 @media screen and (max-width: 320px) {
@@ -247,7 +273,7 @@ div.images img {
   nav img[src*="dragon"] { width: 6em; }
 
   /* Header */
-  header { margin-top: 1em; }
+  header { margin-top: 5em; }
 
   h1 { font-size: 2em; }
 
