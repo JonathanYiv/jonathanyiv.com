@@ -100,7 +100,10 @@ section#overview {
   width: 50vw;
   margin: 0 auto;
   flex-direction: column;
-  align-items: center;
+}
+
+#overview h1 {
+  text-align: center;
 }
 
 #overview p {
