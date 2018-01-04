@@ -29,11 +29,11 @@ a {
 }
 
 h1 {
-  font-size: 10em;
+  font-size: calc(16px + 6vw);
 }
 
 p {
-  text-align: center;
+  text-align: left;
   font-size: 4em;
 }
 
@@ -44,7 +44,7 @@ small {
 
 /* Navigation Bar */
 nav {
-  padding-top: 5em;
+  padding-top: 5vh;
   width: 100%;
 }
 
@@ -61,20 +61,19 @@ nav {
 }
 
 nav img[src*="dragon"] {
-  width: 25em;
+  width: 17vw;
 }
 
 /* Main Sections */
 main {
-  margin-bottom: 50vh;
+  margin-bottom: 70vh;
 }
 
 main:last-child {
-  margin-bottom: 10em;
+  margin-bottom: 15vh;
 }
 
 /* Header */
-
 header {
   margin-top: 5vh;
   display: flex;
@@ -83,9 +82,8 @@ header {
 }
 
 /* Technology Section */
-
 section#technology {
-  margin-top: 10em;
+  margin-top: 10vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -93,13 +91,13 @@ section#technology {
 
 section#technology * {
   align-self: center;
-  height: 15em;
+  height: 25vh;
 }
 
 /* Overview Section */
 section#overview {
   display: flex;
-  width: 50%;
+  width: 50vw;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -128,16 +126,15 @@ div.images {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 5em;
-  width: 80%;
+  margin-top: 5vh;
 }
 
 div.images figure {
-  margin-bottom: 4em;
+  margin-bottom: 4vh;
 }
 
 div.images img {
-  height: 25em;
+  height: 35vh;
 }
 
 #portfolio a {
@@ -158,38 +155,25 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 20em;
+  height: 33vh;
   background-color: #f3f3f3;
 }
 
 /* Laptop Viewports */
 @media screen and (max-width: 1440px) {
   /* Navigation Bar */
-  nav { width: 85%; }
-
   .container { width: 85%; }
 
-  nav img[src*="dragon"] { width: 15em; }
-
   /* Header */
-  h1 { font-size: 5em; }
-
   header p { font-size: 2em; }
 
   /* Overview Section */
-  section#overview { width: 65%; }
-
-  /* Portfolio Section */
-  div.images { width: 100%; }
+  section#overview { width: 70vw; }
 }
 
 @media screen and (max-width: 1024px) {
   /* Navigation Bar */
-  nav { width: 80%; }
-
   .container { width: 80%; }
-
-  nav img[src*="dragon"] { width: 13em; }
 
   /* Navigation Menu */
   #menu {
@@ -202,16 +186,9 @@ footer {
   section#technology * { height: 12em; }
 
   /* Overview Section */
-  section#overview { width: 75%; }
-
   #overview p {
     font-size: 1.6em;
   }
-
-  /* Portfolio Section */
-  div.images img { height: 30em; }
-
-  div.images { width: 100%; }
 }
 
 /* Tablet Viewports */
@@ -219,24 +196,18 @@ footer {
   /* Navigation Bar */
   .container { width: 75%; }
 
-  nav img[src*="dragon"] { width: 8em; }
-
   nav { padding-top: 3em; }
 
   /* Header */
-  h1 { font-size: 4em; }
-
   header p { font-size: 1.5em; }
 
   /* Technology Section */
   section#technology * { height: 10em; }
 
   /* Overview Section */
-  section#overview { width: 85%; }
+  section#overview { width: 80vw; }
 
   /* Portfolio Section */
-  div.images img { height: 25em; }
-
   #portfolio .github { font-size: 1.4em; }
 }
 
@@ -245,8 +216,6 @@ footer {
   /* Navigation Bar */
   .container { width: 70%; }
 
-  nav img[src*="dragon"] { width: 6em; }
-
   /* Navigation Menu */
   #menu {
     padding-left: 1em;
@@ -254,10 +223,6 @@ footer {
   }
 
   /* Header */
-  header { margin-top: 1em; }
-
-  h1 { font-size: 3em; }
-
   header p { font-size: 1.3em; }
 
   /* Technology Section */
@@ -266,8 +231,6 @@ footer {
   section#technology * { height: 5em; }
 
   /* Overview Section */
-  section#overview { width: 100%; }
-
   #overview p {
     font-size: 1.2em;
   }
@@ -277,32 +240,21 @@ footer {
   }
 
   /* Portfolio Section */
-  div.images img { height: 15em; }
-
   #portfolio .github { font-size: 1.2em; }
 }
 
 @media screen and (max-width: 375px) {
   /* Header */
-  h1 { font-size: 2.5em; }
-
   header p { font-size: 1.2em; }
 
   nav { padding-top: 2em; }
-
-  /* Portfolio Section */
-  div.images img { height: 12em; }
 }
 
 @media screen and (max-width: 320px) {
   /* Navigation */
   .container { width: 85%; }
 
-  nav img[src*="dragon"] { width: 6em; }
-
   /* Header */
-  h1 { font-size: 2em; }
-
   header p { font-size: 1em; }
 
   /* Technology Section */
