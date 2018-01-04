@@ -57,7 +57,7 @@ nav {
 
 .menu-link {
   position: fixed;
-  right: 10vw;
+  left: 90vw;
 }
 
 nav img[src*="dragon"] {
@@ -198,6 +198,8 @@ footer {
 
   nav { padding-top: 3em; }
 
+  .menu-link { left: 85vw; }
+
   /* Header */
   header p { font-size: 1.5em; }
 
@@ -221,6 +223,8 @@ footer {
     padding-left: 1em;
     font-size: 1em;
   }
+
+  .menu-link { left: 80vw; }
 
   /* Header */
   header p { font-size: 1.3em; }
